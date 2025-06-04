@@ -40,7 +40,6 @@
 }
 
 .Statistics-card:nth-child(1) {
-    transform: translateX(50%);
     opacity: 0;
 }
 
@@ -61,7 +60,6 @@
 }
 
 .Statistics-card:nth-child(2) {
-    transform: translateX(-50%);
     opacity: 0;
 }
 

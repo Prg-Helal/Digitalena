@@ -24,13 +24,15 @@ for (const card of document.querySelectorAll(".Statistics-card")) {
 // count numbers with scroll
 
 let nums = document.querySelectorAll('.statistics-num');
-let aboutSection = document.querySelector(".about-section");
+let aboutSection = document.querySelector(".Statistics-section");
 let started = false;
 
 window.onscroll = function () {
-    if (window.scrollY >= aboutSection.offsetTop- 500 ) {
+    if (window.scrollY >= aboutSection.offsetTop - 600) {
         if (!started) {
-            nums.forEach((num) => startCount(num));
+            setTimeout(() => {
+                nums.forEach((num) => startCount(num));
+            }, 500);
         }
         started = true;
     }
@@ -53,12 +55,11 @@ const observer = new IntersectionObserver((entries, obeserver) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             const animationType = entry.target.dataset.animate;
-                entry.target.classList.add(`${animationType}`);
-                observer.unobserve(entry.target)
-            
+            entry.target.classList.add(`${animationType}`);
+            observer.unobserve(entry.target);   
         };
     })
-}, { threshold: 0.4 })
+})
 
 document.querySelectorAll(".animate").forEach(section => {
     observer.observe(section);

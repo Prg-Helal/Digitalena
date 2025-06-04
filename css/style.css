@@ -21,7 +21,11 @@
     box-sizing: border-box;
     font-family: "Space Grotesk", sans-serif;
     scroll-behavior: smooth;
+}
 
+html,
+body {
+    overflow-x: hidden;
 }
 
 body {
@@ -146,7 +150,8 @@ body {
 }
 
 /* about section style */
-.about-section {
+
+.Statistics-section {
     color: white;
     margin: 1.6rem auto;
     width: 95%;
@@ -260,7 +265,7 @@ body {
 
 
 
-.about-container h1 {
+/* .about-container h1 {
     font-size: 64px;
     background: linear-gradient(90deg, #fff, #aaa);
     -webkit-background-clip: text;
@@ -270,7 +275,8 @@ body {
 .about-content {
     padding: 1.5rem;
 }
-.about-content p{
+
+.about-content p {
     font-size: 1.2rem;
     text-align: left;
-}
+} */
