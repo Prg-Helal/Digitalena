@@ -115,13 +115,13 @@
 
     <!-- services section -->
 
-    <section class="services-section animate" id="servicesSection" data-animate="animate-slide-top">
+    <section class="services-section animate" id="servicesSection" data-animate="animate-slide-left">
 
         <h1 class="animate" data-animate="animate-slide-top">
             Our Services
         </h1>
 
-        <div class="search-bar animate" data-animate="animate-slide-top">
+        <div class="search-bar animate" data-animate="animate-slide-right">
             <i class="fa fa-search icon"></i>
             <input placeholder="Search" type="search" class="input">
         </div>
@@ -130,10 +130,6 @@
             <div class="swiper-wrapper" id="services-list">
                 <!-- the cards will inject by js-->
             </div>
-
-
-
-
         </div>
 
 
@@ -147,6 +143,25 @@
         <div class="swiper-pagination"></div>
 
     </section>
+
+    <div class="overlay" id="service-overlay">
+        <div class="content-container" >
+            <div class="content-img">
+                <video autoplay muted loop playsinl id="overlay-video">
+                </video>
+            </div>
+            <div class="content-text">
+                <h1 id="overlay-title">
+                </h1>
+                <p id="overlay-details"></p>
+            </div>
+            <button class="btn-close" id="overlay-close-btn">
+                ×
+            </button>
+        </div>
+
+    </div>
+
 
     <!-- link js (main script) -->
     <script defer src="main.js"></script>
