@@ -43,7 +43,7 @@
             <a href="#homeSection" class="nav-link active-link">Home</a>
             <a href="#aboutSection" class="nav-link">About</a>
             <a href="#servicesSection" class="nav-link">Services</a>
-            <a href="#" class="nav-link">Contact</a>
+            <a href="#contactSection" class="nav-link">Contact</a>
         </nav>
     </header>
 
@@ -97,7 +97,7 @@
 
     <!-- about section -->
 
-    <section class="about-section">
+    <section class="about-section" id="aboutSection">
 
         <div class="content animate" data-animate="animate-slide-top">
 
@@ -115,13 +115,13 @@
 
     <!-- services section -->
 
-    <section class="services-section animate" id="servicesSection" data-animate="animate-slide-left">
+    <section class="services-section animate" id="servicesSection" data-animate="animate-slide-top">
 
         <h1 class="animate" data-animate="animate-slide-top">
             Our Services
         </h1>
 
-        <div class="search-bar animate" data-animate="animate-slide-right">
+        <div class="search-bar animate" data-animate="animate-slide-top">
             <i class="fa fa-search icon"></i>
             <input placeholder="Search" type="search" class="input">
         </div>
@@ -145,7 +145,7 @@
     </section>
 
     <div class="overlay" id="service-overlay">
-        <div class="content-container" >
+        <div class="content-container">
             <div class="content-img">
                 <video autoplay muted loop playsinl id="overlay-video">
                 </video>
@@ -161,6 +161,67 @@
         </div>
 
     </div>
+
+    <section class="contact-section" id="contactSection">
+
+        <h1>Contact Us</h1>
+
+
+        <div class="contact-container animate" data-animate="animate-slide-top">
+            <div class="social-media  card-stlye">
+                <h1>Get in Touch</h1>
+                <div class="data-group animate" data-animate="animate-slide-top">
+                    <i class="fa fa-phone icon-style"></i>
+                    <div class="content-group">
+                        <p>Phone Number</p>
+                        <p>0152 2122 123</p>
+                    </div>
+                </div>
+
+                <div class="data-group animate" data-animate="animate-slide-top">
+                    <i class="fa fa-envelope icon-style"></i>
+                    <div class="content-group">
+                        <p>Email</p>
+                        <p>Company@email.com</p>
+                    </div>
+                </div>
+
+                <div class="data-group animate" data-animate="animate-slide-top">
+                    <i class="fa fa-map-marker icon-style"></i>
+                    <div class="content-group">
+                        <p>Location</p>
+                        <p>Smouha </p>
+                    </div>
+                </div>
+            </div>
+
+            <form class="email-form card-stlye animate" data-animate="animate-slide-top" id="contactForm">
+                <h1 class="animate" data-animate="animate-slide-top">Let’s Talk About Your Next Project</h1>
+                <input class="z-index-1000 input-style animate"  data-animate="animate-slide-top" type="text" name="name" placeholder="Your Name" required />
+                <div class="data-group">
+                    <input class="z-index-1000 input-style animate" data-animate="animate-slide-top"  type="email" name="email" placeholder="Your Email" />
+                    <input class="z-index-1000 input-style animate" data-animate="animate-slide-top"  type="tel" name="phone" placeholder="Your Phone" />
+                </div>
+                <textarea class="z-index-1000 input-style animate"  data-animate="animate-slide-top" name="message" placeholder="Your Message"
+                    required></textarea>
+                <div class="btn-container">
+                    <button class="z-index-1000 btn-style animate"  data-animate="animate-slide-top" type="submit">Send</button>
+
+                </div>
+            </form>
+
+        </div>
+
+        <div class="map">
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+    </footer>
 
 
     <!-- link js (main script) -->

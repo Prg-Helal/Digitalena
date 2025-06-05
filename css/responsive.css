@@ -6,9 +6,60 @@
     }
 }
 
-@media only screen and (max-width:1100px) {
+@media only screen and (max-width:1250px) {
     header {
         padding: 0 30px;
+    }
+
+    .data-group p:last-child {
+        margin-top: .5rem;
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width:1150px) {
+
+    .contact-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .email-form,
+    .social-media {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .email-form h1 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .email-form button{
+        width: 100%;
+    }
+    .social-media h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .email-form h1 {
+        font-size: 2rem;
+    }
+
+    .email-form .data-group {
+        flex-direction: column;
+    }
+
+    .email-form .data-group .input-style {
+        width: 100%;
+    }
+    .social-media{
+        align-items: center;
+    }
+    .social-media .data-group{
+        flex-direction: column;
     }
 }
 
@@ -106,8 +157,8 @@
     .Statistics-card h6 span {
         font-size: 1.4rem;
     }
-    .search-bar{
-        min-width: 100% ;
+
+    .search-bar {
+        min-width: 100%;
     }
 }
-
