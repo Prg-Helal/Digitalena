@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/animations.css">
     <!-- link font-awesome -->
     <link rel="stylesheet" href="css/all.min.css">
+    <!-- link swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
 </head>
 
@@ -40,7 +42,7 @@
         <nav class="navbar">
             <a href="#homeSection" class="nav-link active-link">Home</a>
             <a href="#aboutSection" class="nav-link">About</a>
-            <a href="#" class="nav-link">Services</a>
+            <a href="#servicesSection" class="nav-link">Services</a>
             <a href="#" class="nav-link">Contact</a>
         </nav>
     </header>
@@ -53,7 +55,7 @@
         </video>
     </main>
 
-    <section class="about-section" id="aboutSection">
+    <section class="Statistics-section">
 
         <!-- statisics cards -->
         <div class="Statistics-card  animate" data-animate="animate-slide-right">
@@ -89,29 +91,62 @@
                     <span>Of people feel</span> more loyal to brands with great content.
                 </h6>
             </div>
-
         </div>
 
     </section>
 
-    <!-- about sectino -->
+    <!-- about section -->
 
-    <!-- <section class="about-section animate" data-animate="animate-slide-top">
-        <div class="about-container">
-            <div class="about-title">
-                <h1>About Digitalena</h1>
+    <section class="about-section">
+
+        <div class="content animate" data-animate="animate-slide-top">
+
+            <h1>About Digitalena</h1>
+
+            <div class="about-card animate" data-animate="animate-slide-top">
+                <p>
+                    We are a digital marketing agency with over 21 years of experience helping brands grow online. From
+                    SEO to paid campaigns, we specialize in making your presence stand out.
+                </p>
             </div>
         </div>
-        <div class="about-content">
-            <p>
-                At Novi Marketing, we specialize in transforming your brand’s potential into a reality. As a leading
-                360° marketing agency, we offer end-to-end services that cater to every aspect of your marketing needs.
-                From building a strong brand identity to reaching your target audience, we provide tailored solutions
-                that deliver measurable results.
-            </p>
-        </div>
-    </section> -->
 
+    </section>
+
+    <!-- services section -->
+
+    <section class="services-section animate" id="servicesSection" data-animate="animate-slide-top">
+
+        <h1 class="animate" data-animate="animate-slide-top">
+            Our Services
+        </h1>
+
+        <div class="search-bar animate" data-animate="animate-slide-top">
+            <i class="fa fa-search icon"></i>
+            <input placeholder="Search" type="search" class="input">
+        </div>
+
+        <div class="services-container swiper">
+            <div class="swiper-wrapper" id="services-list">
+                <!-- the cards will inject by js-->
+            </div>
+
+
+
+
+        </div>
+
+
+        <div class="swiper-button-prev">
+            <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div class="swiper-button-next">
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </section>
 
     <!-- link js (main script) -->
     <script defer src="js/main.js"></script>
@@ -119,6 +154,9 @@
     <script defer src="js/translations.js"></script>
     <!-- links js (font-awesome script) -->
     <script defer src="js/all.js"></script>
+    <!-- links js (swiper.js) -->
+    <!-- <script defer src="js/swiper-bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
 </body>
 
