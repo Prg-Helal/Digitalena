@@ -75,7 +75,7 @@ const services = [
         shortDescription: "Account management and engaging content creation for social media.",
         details: "We manage your social media accounts by creating tailored content, scheduling posts, responding to followers, and analyzing performance to grow your audience.",
         keywords: ["social media", "ads", "content", "facebook", "instagram", "community"],
-        video: "../images/services/social-media.mp4"
+        video: "images/services/social-media.mp4"
     },
     {
         id: 2,
@@ -83,7 +83,7 @@ const services = [
         shortDescription: "Targeted paid ads to maximize your ROI.",
         details: "We professionally manage ad campaigns on platforms like Meta and Google, ensuring your budget is used efficiently and results are optimized for maximum return.",
         keywords: ["media buying", "paid ads", "facebook ads", "google ads", "roi", "ads management"],
-        video: "../images/services/media-buying.mp4"
+        video: "images/services/media-buying.mp4"
     },
     {
         id: 3,
@@ -91,7 +91,7 @@ const services = [
         shortDescription: "Rank higher in both organic and paid search results.",
         details: "We offer SEO and SEM services to increase your visibility on search engines, using keyword strategies and performance analysis to attract more traffic.",
         keywords: ["seo", "sem", "search engine", "keywords", "google", "optimization"],
-        video: "../images/services/SEO-SEM.mp4"
+        video: "images/services/SEO-SEM.mp4"
     },
     {
         id: 4,
@@ -99,7 +99,7 @@ const services = [
         shortDescription: "Professional video and photography that reflects your brand.",
         details: "From filming to editing, we produce high-quality promotional videos, commercials, and product photography that captivate your audience.",
         keywords: ["media", "video", "production", "editing", "shooting", "content creation"],
-        video: "../images/services/Media-Production.mp4"
+        video: "images/services/Media-Production.mp4"
     },
     {
         id: 5,
@@ -107,7 +107,7 @@ const services = [
         shortDescription: "Responsive and modern website design and development.",
         details: "We build custom websites tailored to your needs—corporate sites, e-commerce, or service platforms—with great speed and clean UX/UI.",
         keywords: ["web", "web design", "website development", "frontend", "backend", "online presence"],
-        video: "../images/services/websits.mp4"
+        video: "images/services/websits.mp4"
     },
     {
         id: 6,
@@ -115,7 +115,7 @@ const services = [
         shortDescription: "Top-notch Android and iOS mobile app development.",
         details: "We design and develop fast, interactive mobile apps with excellent UI/UX for both Android and iOS platforms, including full technical support.",
         keywords: ["mobile", "app", "android", "ios", "application", "development"],
-        video: "../images/services/mobile-apps.mp4"
+        video: "images/services/mobile-apps.mp4"
     },
     {
         id: 7,
@@ -123,7 +123,7 @@ const services = [
         shortDescription: "High-end CGI visuals and 3D rendering.",
         details: "We create photorealistic CGI scenes for ads, products, and architectural visualization using the latest 3D rendering technologies.",
         keywords: ["cgi", "3d", "graphics", "rendering", "visualization", "design"],
-        video: "../images/services/CGI.mp4"
+        video: "images/services/CGI.mp4"
     },
     {
         id: 8,
@@ -131,7 +131,7 @@ const services = [
         shortDescription: "Creative 2D and 3D design and animation.",
         details: "We offer professional 2D and 3D animation services for explainer videos, commercials, and interactive presentations with high visual quality.",
         keywords: ["2d", "3d", "animation", "motion graphics", "design", "illustration"],
-        video: "../images/services/2D-3D.mp4"
+        video: "images/services/2D-3D.mp4"
     }
 ];
 
