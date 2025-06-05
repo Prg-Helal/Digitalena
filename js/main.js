@@ -21,6 +21,8 @@ for (const card of document.querySelectorAll(".Statistics-card")) {
     card.onmousemove = e => handleOnMouseMove(e);
 }
 
+document.querySelector(".about-card").onmousemove = e => handleOnMouseMove(e);
+
 // count numbers with scroll
 
 let nums = document.querySelectorAll('.statistics-num');

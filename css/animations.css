@@ -18,6 +18,11 @@
     animation: slideTop 1s ease-in-out both;
 }
 
+[data-animate="animate-slide-top"] {
+    transform: translateY(-30%);
+    opacity: 0;
+}
+
 @keyframes slideTop {
     from {
         transform: translateY(30%);
@@ -30,16 +35,11 @@
     }
 }
 
-/* .about-section {
-    transform: translateY(30%);
-    opacity: 0;
-} */
-
 .animate-slide-right {
     animation: slideRight 1s ease-in-out both;
 }
 
-.Statistics-card:nth-child(1) {
+[data-animate="animate-slide-right"] {
     opacity: 0;
 }
 
@@ -59,7 +59,7 @@
     animation: slideLeft 1s ease-in-out both;
 }
 
-.Statistics-card:nth-child(2) {
+[data-animate="animate-slide-left"] {
     opacity: 0;
 }
 
