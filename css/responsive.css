@@ -37,13 +37,15 @@
 }
 
 @media (max-width: 480px) {
-    .email-form button{
+    .email-form button {
         width: 100%;
     }
-    .social-media h1{
+
+    .social-media h1 {
         font-size: 2rem;
         text-align: center;
     }
+
     .email-form h1 {
         font-size: 2rem;
     }
@@ -55,13 +57,37 @@
     .email-form .data-group .input-style {
         width: 100%;
     }
-    .social-media{
+
+    .social-media {
         align-items: center;
     }
-    .social-media .data-group{
+
+    .social-media .data-group {
         flex-direction: column;
     }
+
+    .about-section p {
+        font-size: 1.2rem;
+    }
+
+    .title {
+        font-size: 3rem !important;
+    }
+
+    .data-group {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer-container{
+        padding: 1rem !important;
+    }
+    .footer-col:nth-child(2) {
+        width: 95%;
+    }
 }
+
 
 @media only screen and (max-width:900px) {
 

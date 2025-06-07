@@ -107,7 +107,7 @@
 
         <div class="content animate" data-animate="animate-slide-top">
 
-            <h1>About Digitalena</h1>
+            <h1 class="animate title" data-animate="animate-slide-top">About Digitalena</h1>
 
             <div class="about-card animate" data-animate="animate-slide-top">
                 <p>
@@ -123,7 +123,7 @@
 
     <section class="services-section animate" id="servicesSection" data-animate="animate-slide-top">
 
-        <h1 class="animate" data-animate="animate-slide-top">
+        <h1 class="animate title" data-animate="animate-slide-top">
             Our Services
         </h1>
 
@@ -153,7 +153,7 @@
     <div class="overlay" id="service-overlay">
         <div class="content-container">
             <div class="content-img">
-                <video  muted loop playsinline preload="none" data-src="path/to/video.mp4" poster="path/to/poster.jpg" id="overlay-video">
+                <video autoplay muted loop playsinl id="overlay-video">
                 </video>
             </div>
             <div class="content-text">
@@ -180,7 +180,11 @@
                     <i class="fa fa-phone icon-style"></i>
                     <div class="content-group">
                         <p>Phone Number</p>
-                        <p>0152 2122 123</p>
+                        <p>0152 2122 123
+                            <span class="copy-button" data-text="0152 2122 123">
+                                <i class="copy-icon fas fa-copy"> </i>
+                            </span>
+                        </p>
                     </div>
                 </div>
 
@@ -188,7 +192,8 @@
                     <i class="fa fa-envelope icon-style"></i>
                     <div class="content-group">
                         <p>Email</p>
-                        <p>Company@email.com</p>
+                        <p data-text="Company@email.com">Company@email.com <span class="copy-button"
+                                data-text="Company@email.com"><i class="copy-icon fas fa-copy"></i></span></p>
                     </div>
                 </div>
 
@@ -196,7 +201,8 @@
                     <i class="fa fa-map-marker icon-style"></i>
                     <div class="content-group">
                         <p>Location</p>
-                        <p>Smouha </p>
+                        <p data-text="Smouha">Smouha <span class="copy-button" data-text="Smouha"><i
+                                    class="copy-icon fas fa-copy"></i></span></p>
                     </div>
                 </div>
             </div>
@@ -232,7 +238,42 @@
 
 
     <footer>
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Digitalena</h4>
+                    <ul>
+                        <li> <a href="#homeSection">Home</a>
+                        </li>
+                        <li> <a href="#aboutSection">About</a>
+                        </li>
+                        <li> <a href="#servicesSection">Services</a>
+                        </li>
+                        <li> <a href="#contactSection">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <!-- <img src="images/Digitalena-logo.png" alt=""> -->
+                    <h4>About Us</h4>
+                    <p>
+                        We are a digital marketing agency with over 21 years of experience helping brands grow online.
+                        From
+                        SEO to paid campaigns, we specialize in making your presence stand out.
 
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
 
@@ -243,7 +284,9 @@
     <!-- links js (font-awesome script) -->
     <script defer src="js/all.js"></script>
     <!-- links js (swiper.js) -->
-     <script defer src="js/swiper-bundle.min.js"></script>
+    <!-- <script defer src="js/swiper-bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
 </body>
 
 </html>

@@ -412,9 +412,9 @@ const overlayCloseBtn = document.getElementById('overlay-close-btn');
 function openOverlay(serviceId) {
     const service = services.find(s => s.id === +serviceId);
     if (!service) return;
-
+    overlayVideo.poster = `${service.video}`;
     overlayVideo.innerHTML = `<source src="${service.video}" type="video/mp4">`; // تحديث الفيديو
-    overlayVideo.load(); // اعادة تحميل الفيديو
+    overlayVideo.load();
     overlayTitle.textContent = service.name;
     overlayDetails.textContent = service.details;
 
@@ -431,29 +431,24 @@ container.addEventListener('click', (e) => {
 
 overlayCloseBtn.addEventListener('click', () => {
     overlay.style.display = 'none';
-    overlayVideo.pause(); // وقف الفيديو لما نغلق
+    overlayVideo.pause();
 });
 
 // send emails
 
-document.getElementById('contactForm').addEventListener('submit', async function (e) {
-    e.preventDefault();
+document.querySelectorAll('.copy-button').forEach(btn => {
+    btn.addEventListener('click', function () {
+        const textToCopy = btn.getAttribute('data-text');
 
-    const formData = {
-        name: this.name.value,
-        email: this.email.value,
-        message: this.message.value,
-        phone: this.phone.value
-    };
 
-    const response = await fetch('/send-email', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
+        navigator.clipboard.writeText(textToCopy).then(() => {
+
+            btn.innerHTML = '<i class="copy-icon fas fa-check"> </i>'
+
+        });
+        setTimeout(() => {
+            btn.innerHTML = '<i class="copy-icon fas fa-copy "> </i>'
+
+        }, 1000);
     });
-
-    const result = await response.json();
-    alert(result.message);
-    this.reset();
 });
-
