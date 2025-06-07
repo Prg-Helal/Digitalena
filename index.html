@@ -21,6 +21,12 @@
 
 <body>
 
+    <!-- scroll to top -->
+
+    <span class="up-icon-conatiner" id="scrollTop">
+        <i class="fa-solid fa-chevron-up up-icon"></i>
+    </span>
+
     <!-- header -->
 
     <header class="header animate" data-animate="animate-slide-down">
@@ -50,7 +56,7 @@
     <!-- home page -->
 
     <main class="home-section animate" data-animate="animate-slide-top" id="homeSection">
-        <video autoplay muted loop playsinline class="bg-video">
+        <video autoplay muted loop playsinline class="bg-video" poster="images/posters/home-page.png">
             <source src="images/home-background.mp4" type="video/mp4">
         </video>
     </main>
@@ -197,15 +203,19 @@
 
             <form class="email-form card-stlye animate" data-animate="animate-slide-top" id="contactForm">
                 <h1 class="animate" data-animate="animate-slide-top">Let’s Talk About Your Next Project</h1>
-                <input class="z-index-1000 input-style animate"  data-animate="animate-slide-top" type="text" name="name" placeholder="Your Name" required />
+                <input class="z-index-1000 input-style animate" data-animate="animate-slide-top" type="text" name="name"
+                    placeholder="Your Name" required />
                 <div class="data-group">
-                    <input class="z-index-1000 input-style animate" data-animate="animate-slide-top"  type="email" name="email" placeholder="Your Email" />
-                    <input class="z-index-1000 input-style animate" data-animate="animate-slide-top"  type="tel" name="phone" placeholder="Your Phone" />
+                    <input class="z-index-1000 input-style animate" data-animate="animate-slide-top" type="email"
+                        name="email" placeholder="Your Email" />
+                    <input class="z-index-1000 input-style animate" data-animate="animate-slide-top" type="tel"
+                        name="phone" placeholder="Your Phone" />
                 </div>
-                <textarea class="z-index-1000 input-style animate"  data-animate="animate-slide-top" name="message" placeholder="Your Message"
-                    required></textarea>
+                <textarea class="z-index-1000 input-style animate" data-animate="animate-slide-top" name="message"
+                    placeholder="Your Message" required></textarea>
                 <div class="btn-container">
-                    <button class="z-index-1000 btn-style animate"  data-animate="animate-slide-top" type="submit">Send</button>
+                    <button class="z-index-1000 btn-style animate" data-animate="animate-slide-top"
+                        type="submit">Send</button>
 
                 </div>
             </form>
@@ -213,7 +223,9 @@
         </div>
 
         <div class="map">
-
+            <iframe width="100%" height="450" style="border:0;" loading="lazy" allowfullscreen
+                src="https://maps.google.com/maps?q=31.21282,29.94009&z=16&output=embed">
+            </iframe>
         </div>
 
     </section>

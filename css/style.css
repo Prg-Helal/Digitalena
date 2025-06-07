@@ -59,6 +59,42 @@ body {
     background-color: #305ca8;
 }
 
+/* scroll to top */
+
+.up-icon-conatiner {
+    position: fixed;
+    bottom: -60px;
+    right: 16px;
+    z-index: 10000;
+    transition: bottom 0.5s ease, opacity 0.2s ease;
+    opacity: 0;
+}
+
+.up-icon {
+    padding: .7rem;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 10px #264d91;
+    color: #3d84ff;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.show {
+    bottom: 15px;
+    opacity: 1;
+}
+
+.up-icon:hover {
+    box-shadow: 0 5px 15px #264d91;
+    transform: translateY(-2px);
+}
+
+.up-icon:active {
+    transform: translateY(0);
+}
+
+
 /* header style */
 
 .header {
@@ -939,4 +975,14 @@ input:hover {
 
 .z-index-1000 {
     z-index: 1000;
+}
+
+.map {
+    margin-top: 2rem;
+    border-radius: 1rem;
+}
+
+.map iframe {
+    border-radius: 1rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }

@@ -5,6 +5,28 @@ hamburger.onclick = function () {
     navBar = document.querySelector(".navbar").classList.toggle("active");
     header = document.querySelector(".header").classList.toggle("active");
 }
+
+//scroll to top 
+
+let arrowTop = document.getElementById('scrollTop');
+
+arrowTop.onclick = function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+}
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY >= 100) {
+        arrowTop.classList.add("show");
+    } else {
+        arrowTop.classList.remove("show");
+    }
+
+});
+
 // cards hover 
 const handleOnMouseMove = e => {
     const { currentTarget: target } = e;
@@ -88,7 +110,8 @@ const services = [
             "paid ads",
             "followers",
             "social marketing"],
-        video: "images/services/social-media.mp4"
+        video: "images/services/social-media.mp4",
+        placeholder: "images/posters/social-media.png"
     },
     {
         id: 2,
@@ -112,7 +135,8 @@ const services = [
             "campaign optimization"
         ]
         ,
-        video: "images/services/media-buying.mp4"
+        video: "images/services/media-buying.mp4",
+        placeholder: "images/posters/media-buying.png"
     },
     {
         id: 3,
@@ -137,7 +161,8 @@ const services = [
             "visibility"
         ]
         ,
-        video: "images/services/SEO-SEM.mp4"
+        video: "images/services/SEO-SEM.mp4",
+        placeholder: "images/posters/SEO-SEM.png"
     },
     {
         id: 4,
@@ -160,7 +185,8 @@ const services = [
             "creative services"
         ]
         ,
-        video: "images/services/Media-Production.mp4"
+        video: "images/services/Media-Production.mp4",
+        placeholder: "images/posters/Media-Production.png"
     },
     {
         id: 5,
@@ -185,7 +211,8 @@ const services = [
             "custom websites"
         ]
         ,
-        video: "images/services/websits.mp4"
+        video: "images/services/websits.mp4",
+        placeholder: "images/posters/websits.png"
     },
     {
         id: 6,
@@ -208,7 +235,8 @@ const services = [
             "mobile platform"
         ]
         ,
-        video: "images/services/mobile-apps.mp4"
+        video: "images/services/mobile-apps.mp4",
+        placeholder: "images/posters/mobile-apps.png"
     },
     {
         id: 7,
@@ -230,7 +258,8 @@ const services = [
             "animation"
         ]
         ,
-        video: "images/services/CGI.mp4"
+        video: "images/services/CGI.mp4",
+        placeholder: "images/posters/CGI.png"
     },
     {
         id: 8,
@@ -253,7 +282,8 @@ const services = [
             "graphics"
         ]
         ,
-        video: "images/services/2D-3D.mp4"
+        video: "images/services/2D-3D.mp4",
+        placeholder: "images/posters/2D-3D.png"
     }
 ];
 
@@ -263,10 +293,10 @@ const container = document.getElementById("services-list");
 
 services.forEach(service => {
     const card = document.createElement("div");
-    card.classList.add("swiper-slide", "card-article");
+    card.classList.add("swiper-slide", "service-card");
     card.innerHTML = `
     <div class="card-background">
-      <video autoplay muted loop playsinline class="card-background">
+      <video autoplay muted loop playsinline class="card-background" poster ="${service.placeholder}" >
         <source src="${service.video}" type="video/mp4" />
       </video>
     </div>
@@ -426,3 +456,4 @@ document.getElementById('contactForm').addEventListener('submit', async function
     alert(result.message);
     this.reset();
 });
+
